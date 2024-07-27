@@ -2,9 +2,10 @@ import styled from '@emotion/styled';
 
 export const SectionStyled = styled.section`
   margin: 0 auto;
+  padding-bottom: 30px;
   width: 100%;
 
-  @media screen and (min-width: 320px) and (max-width: 767px){
+  @media screen and (min-width: 320px) and (max-width: 767px) {
     width: 280x;
     display: flex;
     flex-direction: column;
@@ -19,7 +20,6 @@ export const SectionStyled = styled.section`
 `;
 
 export const ContainerStyled = styled.div`
-  /* width: 100%; */
   margin: 0 auto;
   background: linear-gradient(
     115.74deg,
@@ -45,17 +45,14 @@ export const ContainerStyled = styled.div`
 export const BoxStyled = styled.div`
   display: flex;
 
-@media screen and (min-width: 320px) {
+  @media screen and (min-width: 320px) {
   }
   @media screen and (min-width: 768px) {
     flex-wrap: wrap;
-    gap:40px;
+    gap: 40px;
   }
   @media screen and (min-width: 1280px) {
     flex-wrap: nowrap;
     justify-content: space-between;
   }
-
-  
-  
 `;

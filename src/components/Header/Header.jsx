@@ -5,13 +5,13 @@ import Avatar from '@mui/material/Avatar';
 import { useDispatch } from 'react-redux';
 import { logoutUser } from 'redux/auth/authOperations';
 import {
-  Conteiner,
+  Container,
   Navigate,
   Title,
   Btn,
   Logout,
   HeaderBgr,
-  Logo
+  Logo,
 } from './Header.styled';
 import { useSelector } from 'react-redux';
 import { grey } from '@mui/material/colors';
@@ -21,7 +21,7 @@ import { useState } from 'react';
 const Header = () => {
   const dispatch = useDispatch();
   const color = grey[700];
-  const style ={marginBottom:-2}
+  const style = { marginBottom: -2 };
   const userName = useSelector(state => state.auth.email);
   const isLoggedIn = useAuth();
 
@@ -39,9 +39,12 @@ const Header = () => {
   return (
     <>
       <HeaderBgr>
-        <Conteiner >
-          <Logo >Budget B
-            <img src={coin} alt="coin" style={style} />ss</Logo>
+        <Container>
+          <Logo>
+            Budget B
+            <img src={coin} alt="coin" style={style} />
+            ss
+          </Logo>
           {isLoggedIn && (
             <Navigate>
               <Avatar
@@ -57,10 +60,11 @@ const Header = () => {
                 {userName && userName.slice(0, 1).toUpperCase()}
               </Avatar>
               <Title>{userName && userName.split('@')[0]}</Title>
-              <Logout >
+              <Logout>
                 <OutputOutlinedIcon
-                  onClick={handleOpen} type="button"
-                  sx={{ width: 24, height: 24, margin: 2.3, marginRight: 0 }}
+                  onClick={handleOpen}
+                  type="button"
+                  sx={{ margin: 2.3, marginRight: 0 }}
                   htmlColor="white"
                   alt="logout"
                 ></OutputOutlinedIcon>
@@ -70,7 +74,7 @@ const Header = () => {
               </Btn>
             </Navigate>
           )}
-        </Conteiner>
+        </Container>
       </HeaderBgr>
       {showModal && (
         <ModalConfirm

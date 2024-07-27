@@ -2,8 +2,12 @@ import styled from '@emotion/styled';
 import { NumericFormat } from 'react-number-format';
 import Tooltip, { tooltipClasses } from '@mui/material/Tooltip';
 
-export const TooltipStyled = styled(({ className, ...other }) => (
-  <Tooltip classes={{ tooltip: className }} {...other} />
+export const TooltipStyled = styled(({ className, placement, ...other }) => (
+  <Tooltip
+    classes={{ tooltip: className }}
+    placement="bottom-start"
+    {...other}
+  />
 ))`
   && {
     width: 268px;
@@ -34,8 +38,9 @@ export const FormStyled = styled.form`
     flex-direction: row;
     gap: 20px;
     width: 334px;
+    margin-left: 40px;
   }
-  @media (min-width: 1440px) {
+  @media (min-width: 1280px) {
     margin: 0 auto 0 auto;
   }
 `;

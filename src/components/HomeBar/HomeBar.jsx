@@ -5,14 +5,12 @@ import { WrapperStyled } from './HomeBar.styled';
 
 const HomeBar = () => {
   return (
-    <section>
-      <WrapperStyled>
-        <Balance />
-        <NavLink to="/reports">
-          <ReportsLink />
-        </NavLink>
-      </WrapperStyled>
-    </section>
+    <WrapperStyled>
+      <Balance />
+      <NavLink to="/reports">
+        <ReportsLink />
+      </NavLink>
+    </WrapperStyled>
   );
 };
 

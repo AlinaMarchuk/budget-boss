@@ -58,7 +58,7 @@ const TransactionsList = () => {
     transactionType === 'income' ? transactionIncome : transactionExpense;
   const transaction = isRender;
   // const isAddTransactions = 9 - transaction.length;
-    
+
   // useEffect(() => {
   //   if (isAddTransactions >= 0) {
   //     for (let i = 0; i < isAddTransactions; i++) {
@@ -88,7 +88,7 @@ const TransactionsList = () => {
     setShowModal(false);
   };
 
-  const tableMobile = useMediaQuery({ query: '(max-width: 768px)' });
+  const tableMobile = useMediaQuery({ query: '(max-width: 767px)' });
   return (
     <div>
       {!tableMobile ? (

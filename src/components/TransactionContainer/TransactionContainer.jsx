@@ -11,7 +11,7 @@ import {
 
 const TransactionContainer = () => {
   const isTablet = useMediaQuery({ query: '(min-width: 768px)' });
-  const tableMobile = useMediaQuery({ query: '(max-width: 768px)' });
+  const tableMobile = useMediaQuery({ query: '(max-width: 767px)' });
 
   return (
     <SectionStyled>

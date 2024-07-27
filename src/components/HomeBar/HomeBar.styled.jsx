@@ -1,22 +1,22 @@
 import styled from '@emotion/styled';
 
-export const WrapperStyled = styled.div`
+export const WrapperStyled = styled.section`
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
   gap: 30px;
-  margin: 16px 0 40px 0;
 
   @media (min-width: 768px) {
     flex-direction: row;
     justify-content: space-between;
     gap: 20px;
     width: 704px;
-    padding-left: 38px;
-    margin: 40px auto 60px auto;
+    padding: 40px 0 60px 0;
+    margin-left: auto;
+    margin-right: auto;
   }
-  @media (min-width: 1440px) {
+  @media screen and (min-width: 1280px) {
     width: 1094px;
-    margin-bottom: 10px;
+    padding-bottom: 10px;
   }
 `;

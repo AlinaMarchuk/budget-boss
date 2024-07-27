@@ -91,7 +91,7 @@ const AddTransaction = () => {
     setIsModalOpen(!isModalOpen);
   };
 
-  const tableMobile = useMediaQuery({ query: '(max-width: 768px)' });
+  const tableMobile = useMediaQuery({ query: '(max-width: 767px)' });
 
   return (
     <WrapStyled>

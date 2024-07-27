@@ -6,11 +6,10 @@ export const WrapStyled = styled.div`
   display: flex;
   align-items: center;
 
-  @media screen and (min-width: 320px) and (max-width: 768px) {
+  @media screen and (min-width: 320px) and (max-width: 767px) {
     flex-direction: column;
     gap: 32px;
     justify-content: center;
-
   }
   @media screen and (min-width: 768px) {
     align-items: flex-start;
@@ -51,7 +50,6 @@ export const FormStyled = styled.form`
     flex-wrap: wrap;
     justify-content: center;
     padding: 32px 20px;
-
   }
   @media screen and (min-width: 768px) {
     gap: 32px;
@@ -94,12 +92,11 @@ export const DatePickerStyled = styled(DatePicker)`
 
 export const InputWrapStyled = styled.div`
   display: flex;
-  @media (max-width: 767px){
+  @media (max-width: 767px) {
     flex-wrap: wrap;
     width: 280px;
     justify-content: center;
   }
- 
 `;
 
 export const InputStyled = styled.input`
@@ -125,14 +122,13 @@ export const InputStyled = styled.input`
     border-bottom-right-radius: 16px;
   }
 
-  @media (max-width: 767px){
+  @media (max-width: 767px) {
     width: 280px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     height: 40px;
     font-size: 12px;
     font-weight: 400;
-
   }
 
   @media screen and (min-width: 768px) {
@@ -152,15 +148,15 @@ export const NumericFormatStyled = styled(NumericFormat)`
   border-bottom-right-radius: 16px;
   border: 2px solid #474759;
 
-  @media (max-width: 767px){
+  @media (max-width: 767px) {
     max-width: 183px;
     border-radius: 22px;
-  margin-top: 32px;
-  margin-bottom: 80px;
-  height: 44px;
-  padding: 0px 40px;
+    margin-top: 32px;
+    margin-bottom: 80px;
+    height: 44px;
+    padding: 0px 40px;
   }
-  
+
   @media screen and (min-width: 768px) {
     width: 116px;
   }
@@ -220,7 +216,7 @@ export const BtnStyled = styled.button`
     );
     box-shadow: none;
     border: 2px solid #474759;
-    font-weight:300;
-    font-size:10px;
+    font-weight: 300;
+    font-size: 10px;
   }
 `;

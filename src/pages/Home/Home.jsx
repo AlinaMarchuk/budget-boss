@@ -3,12 +3,12 @@ import TransactionContainer from 'components/TransactionContainer/TransactionCon
 import { generatePath } from 'react-router-dom';
 
 const Home = () => {
-  generatePath('/home/category', {category: "expenses"});
+  generatePath('/home/category', { category: 'expenses' });
   return (
-    <section>
+    <main>
       <HomeBar />
       <TransactionContainer />
-    </section>
+    </main>
   );
 };
 
